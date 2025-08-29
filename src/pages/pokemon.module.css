@@ -1,0 +1,218 @@
+.pokemon {
+  height: auto;              /* Cambia de 85vh a auto para que crezca si es necesario */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 80px;         /* Ajusta este valor para bajar más la card */
+}
+
+.pokeballButton {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  background: none;
+  padding: 50px 50px 0 50px;
+  background: -webkit-linear-gradient(
+    rgb(35, 105, 247) 70%,
+    rgba(119, 235, 129, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pokeballImg {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.pokemonInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.pokemonInfoImg {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.pokemonTitle {
+  margin: 50px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pokemonCard {
+  width: 340px;
+  background-color: #1e1e1e;
+  border: 2px solid #595e5b;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .pokemonCard {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+.pokemonNumber {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #2e2e2e;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #dcdcdc;
+}
+
+.pokemonCircle {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle at center, #2a2a2a 40%, #1a1a1a 100%);
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemonSprite {
+  width: 200px;
+  height: auto;
+}
+
+.pokemonName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.statGroup {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.statGroup strong {
+  display: block;
+  font-size: 1rem;
+  color: white;
+}
+
+.typeGroup {
+  margin-top: 10px;
+}
+
+.bestNature {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Estilo base para todos los tipos */
+.type {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  margin: 5px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.typeGrass {
+  background-color: #78C850; /* verde claro */
+}
+
+.typePoison {
+  background-color: #A040A0; /* morado */
+}
+
+.typeFire {
+  background-color: #F08030; /* naranja */
+}
+
+.typeWater {
+  background-color: #6890F0; /* azul */
+}
+
+.typeBug {
+  background-color: #A8B820; /* verde oliva */
+}
+
+.typeElectric {
+  background-color: #F8D030;
+  color: black;
+}
+
+.typePsychic {
+  background-color: #F85888; /* rosa */
+}
+
+.typeIce {
+  background-color: #98D8D8; /* azul claro */
+  color: black;
+}
+
+.typeDragon {
+  background-color: #7038F8; /* morado oscuro */
+}
+
+.typeDark {
+  background-color: #705848; /* marrón oscuro */
+}
+
+.typeFairy {
+  background-color: #EE99AC; /* rosa claro */
+  color: black;
+}
+
+.typeSteel {
+  background-color: #B8B8D0; /* gris */
+  color: black;
+}
+
+.typeGhost {
+  background-color: #705898; /* morado oscuro */
+}
+
+.typeNormal {
+  background-color: #A8A878; /* verde oliva claro */
+  color: black;
+}
+
+.typeRock {
+  background-color: #B8A038; /* amarillo oscuro */
+  color: black;
+}
+
+.typeGround {
+  background-color: #E0C068; /* marrón claro */
+  color: black;
+}
+
+.typeFighting {
+  background-color: #C03028; /* rojo */
+}
+
+.typeFlying {
+  background-color: #A890F0; /* azul claro */
+}

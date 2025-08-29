@@ -1,0 +1,97 @@
+.container {
+  padding: 40px;
+}
+
+.h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    rgba(35, 105, 247) 25%,
+    rgba(119, 235, 129, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.grid {
+  display: flex;
+  gap: 40px;
+}
+
+.locationList {
+  width: 50%;
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.locationItem {
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.locationItem:hover {
+  color: #0070f3;
+}
+
+.detailPanel {
+  width: 50%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.h3 {
+  margin-top: 20px;
+  text-transform: capitalize;
+  background: -webkit-linear-gradient(
+    rgba(35, 105, 247) 25%,
+    rgba(119, 235, 129, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+
+.p{
+  background: -webkit-linear-gradient(
+    rgba(35, 105, 247) 25%,
+    rgba(119, 235, 129, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+@media (max-width: 561px) {
+  .grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .locationList {
+    width: 100%;
+    max-height: 350px;
+    overflow-y: auto;
+  }
+
+  .detailPanel {
+    width: 100%;
+    margin-bottom: 40px; /*  deja espacio antes del footer */
+  }
+}
